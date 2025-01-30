@@ -1,7 +1,7 @@
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
 import { BsGraphUp } from "react-icons/bs";
 import { FaBox, FaClipboardList, FaUserCircle } from "react-icons/fa";
-import AdminProductPage from "./admin/adminProductPage";
+
 
 export default function AdminHomePage() {
     return (
@@ -25,13 +25,13 @@ export default function AdminHomePage() {
                     Customers
                 </Link>
 
-                </div>
+            </div>
 
 
             <div className="w-[80%] h-screen bg-red-400">
-               <Routes path="/*">
-                <Route path="/products" element={<AdminProductPage/>}/>
-               </Routes>
+                <Routes path="/*">
+                <Route path="/dashboard" element={<h1>Dashboard</h1>}/>
+                </Routes>
             </div>
   
         </div>
