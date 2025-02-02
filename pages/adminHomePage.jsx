@@ -3,6 +3,7 @@ import { BsGraphUp } from "react-icons/bs";
 import { FaBox, FaClipboardList, FaUserCircle } from "react-icons/fa";
 import AdminProductPage from "./admin/adminProductPage";
 import AddProductForm from "./admin/addProduct";
+import EditProductForm from "./admin/editProductForm";
 
 
 export default function AdminHomePage() {
@@ -35,6 +36,7 @@ export default function AdminHomePage() {
                 <Route path="/dashboard" element={<h1>Dashboard</h1>}/>
                 <Route path="/products" element={<AdminProductPage/>}/>
                 <Route path="/products/addProduct" element={<AddProductForm/>}/>
+                <Route path="/products/editProduct" element={<EditProductForm/>}/>
                 <Route path="/orders" element={<h1>Oders</h1>}/>
                 <Route path="/customers" element={<h1>Customers</h1>}/>
                 <Route path="/*" element={<h1>404 not found</h1>}/>
