@@ -12,7 +12,7 @@ export default function AdminProductPage() {
 
   useEffect(() => {
     if(!productsLoaded){
-      axios.get("http://localhost:5000/api/products").then((res) => {
+      axios.get(import.meta.env.VITE_BACKEND_URL+"/api/products").then((res) => {
       
         setProducts(res.data);
         setProductsLoaded(true);
@@ -59,7 +59,7 @@ export default function AdminProductPage() {
                     title="Delete Product"
                     
                     onClick={()=>{
-                      axios.delete(`http://localhots:5000/api/products/${product.productId}`,{
+                      axios.delete(import.meta.env.VITE_BACKEND_URL+`/api/products/${product.productId}`,{
                        
                       }).then((res)=>{
                         
