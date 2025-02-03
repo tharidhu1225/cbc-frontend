@@ -7,7 +7,7 @@ export default function ProductOverview(){
 
    const params = useParams();
    const productId = params.id;
-   const [product, setProduct] = useState(null)
+   const [product, setProduct] = useState()
    const [status, setStatus] = useState("loading")
 
    useEffect(
