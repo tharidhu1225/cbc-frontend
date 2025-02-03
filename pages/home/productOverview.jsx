@@ -55,7 +55,7 @@ export default function ProductOverview(){
                             <p className="text-xl text-gray-600">{
                             (product.price>product.lastPrice)&&
                             <span className="line-through text-red-500">LKR.{product.price}</span>
-                            } <span>{"LKR."+product.lastPrice}</span> </p>
+                            } <span>{"LKR."+product.lastPrice }</span> </p>
                             <p className="text-xl text-gray-600 line-clamp-3">{product.description}</p>
 
                         </div>
