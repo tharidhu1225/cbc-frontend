@@ -7,7 +7,7 @@ export default function HomePage(){
     return(
         <div className="h-screen w-full">
              <Header/>
-            <div className="w-full h-[calc(100vh-100px)] bg-[#08D9D6]">
+            <div className="w-full h-[calc(100vh-100px)] bg-[#f3f9fa]">
             <Routes path="/*">
                <Route path="/" element={<h1>Home page</h1>}/>
                <Route path="/login" element={<LoginPage/>}/>
