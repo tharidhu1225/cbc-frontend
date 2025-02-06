@@ -8,7 +8,6 @@ export default function AddProductForm() {
   const [productId, setProductId] = useState("");
   const [productName, setProductName] = useState("");
   const [alternativeNames, setAlternativeNames] = useState("");
-  const [imageUrls, setImageUrls] = useState("");
   const [imagefiles,setImageFiles] = useState ([]);
   const [price, setPrice] = useState("");
   const [lastPrice, setLastPrice] = useState("");
