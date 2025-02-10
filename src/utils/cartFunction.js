@@ -17,14 +17,14 @@ export function addToCart(productId, qty){
         
         }
     )
-    if(index== -1){
+    if(index==-1){
         cart.push(
-            {productId, qty}
+            {productId,qty}
         )
     }else{
 
         const newQty = cart[index].qty + qty
-        if(newQty<=0){
+        if(newQty<= 0){
             cart.splice(index,1)
         }else{
             cart[index].qty = newQty
@@ -34,7 +34,27 @@ export function addToCart(productId, qty){
 }
 
 export function saveCart(cart){
-    lacalStorage.setItem("cart",JSON.stringify(cart))
+    localStorage.setItem("cart",JSON.stringify(cart))
 }
+
+export function clearCart(){
+    localStorage.removeItem('cart')
+}
+
+export function deleteItem(productId){
+    const cart = loadCart()
+
+    const index = cart.findIndex(
+        (item)=>{
+           item.productId==productId
+        
+        }
+    )
+
+    if(index!=-1){
+        cart.splice(index,1)
+    }
+}
+
 
 

@@ -50,8 +50,8 @@ export default function AdminProductPage() {
               >
                 <td className="px-6 py-4 text-sm font-medium">{product.productId}</td>
                 <td className="px-6 py-4 text-sm">{product.productName}</td>
-                <td className="px-6 py-4 text-sm">${product.price.toFixed(2)}</td>
-                <td className="px-6 py-4 text-sm">${product.lastPrice.toFixed(2)}</td>
+                <td className="px-6 py-4 text-sm">LKR.{product.price.toFixed(2)}</td>
+                <td className="px-6 py-4 text-sm">LKR.{product.lastPrice.toFixed(2)}</td>
                 <td className="px-6 py-4 text-sm">{product.stock}</td>
                 <td className="px-6 py-4 text-sm max-w-xs truncate">{product.description}</td>
                 <td className="px-6 py-4">

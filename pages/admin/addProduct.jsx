@@ -63,7 +63,7 @@ export default function AddProductForm() {
         <div>      
           {/* Product ID */}
           <div className="flex flex-col">
-            <label className="text-gray-700 text-lg font-medium mb-2">
+            <label className="text-gray-700 text-lg font-medium mb-2" >
               Product ID
             </label>
             <input

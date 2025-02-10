@@ -32,8 +32,9 @@ const LoginPage = () => {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-900">
       <div className="w-full max-w-md p-8 bg-gray-800 rounded-lg shadow-lg">
+        <h1 className="mb-6 text-2xl font-bold text-center text-white">Login</h1>
         <h2 className="mb-6 text-3xl font-bold text-center text-white">
-          Login
+          TN International (PVT) LTD
         </h2>
         <form>
           {/* Email Input */}
