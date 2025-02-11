@@ -15,13 +15,15 @@ export default function Header(){
 
             <GiHamburgerMenu onClick={()=>{setIsSliderOpen(true)}} className="text-3xl cursor-pointer text-[#1079bf] absolute right-[10px] lg:hidden"/>
 
-            <div className="h-full items-center w-[500px] justify-evenly hidden lg:flex">
+            <div className="h-full items-center w-[500px] justify-evenly hidden lg:flex space-x-10">
 
             <Link to="/" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Home</Link>
             <Link to="/products" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Products</Link>
             <Link to="/about" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">About Us</Link>
             <Link to="/contact" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Contact Us</Link>
             <Link to="/cart" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Cart</Link>
+            <Link to="/orders" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Add Order</Link>
+            
 
             </div>
 

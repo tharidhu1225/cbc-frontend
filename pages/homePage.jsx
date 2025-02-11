@@ -6,6 +6,8 @@ import ProductPage from "./home/product";
 import About from "./home/about";
 import Contact from "./home/contact";
 import Cart from "./home/cart";
+import Home from "./home/home";
+import ContactUs from "./home/contact";
 
 export default function HomePage(){
     return(
@@ -14,12 +16,12 @@ export default function HomePage(){
             <div className="w-full h-[calc(100vh-100px)] bg-[#f3f9fa]">
 
             <Routes path="/*">
-               <Route path="/" element={<h1>Home page</h1>}/>
+               <Route path="/" element={<Home/>}/>
                <Route path="/products" element={<ProductPage/>}/>
                <Route path="/login" element={<LoginPage/>}/>
                <Route path="/productInfo/:id" element={<ProductOverview/>}/>
                <Route path="/about/" element={<About/>}/>
-               <Route path="/contact/" element={<Contact/>}/>
+               <Route path="/contact/" element={<ContactUs/>}/>
                <Route path="/cart" element={<Cart/>}/>
             </Routes> 
             </div>

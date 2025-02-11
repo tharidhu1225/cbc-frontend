@@ -1,3 +1,4 @@
+import { AiFillCodeSandboxSquare, AiOutlineAppstore, AiOutlineHome, AiOutlineInfoCircle, AiOutlinePhone, AiOutlineShoppingCart } from "react-icons/ai";
 import { IoCloseCircleOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
@@ -12,12 +13,13 @@ export default function NavSlider(props){
            <IoCloseCircleOutline onClick={closeSlider} className="text-3xl absolute cursor-pointer text-[#1079bf] right-[60px] lg:hidden"/>
            </div>
     
-               <div className="bg-white flex flex-col w-[300px] h-screen">
-                <Link to="/" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Home</Link>
-                <Link to="/products" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Products</Link>
-                <Link to="/about" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">About Us</Link>
-                <Link to="/contact" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Contact Us</Link>
-                <Link to="/cart" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Cart</Link>
+               <div className="bg-[#052d6f] flex flex-col w-[200px] h-screen space-y-7">
+               <Link to="/" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiOutlineHome className="mr-2"/> Home</Link>
+               <Link to="/products" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiOutlineAppstore className="mr-2" /> Products</Link>
+               <Link to="/about" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiOutlineInfoCircle className="mr-2" /> About Us</Link>
+               <Link to="/contact" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiOutlinePhone className="mr-2" /> Contact Us</Link>
+               <Link to="/cart" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiOutlineShoppingCart className="mr-2" /> Cart</Link>
+               <Link to="/orders" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiFillCodeSandboxSquare className="mr-2" />Add Order</Link>
                </div>
                </div>
     )
