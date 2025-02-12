@@ -26,6 +26,7 @@ export default function AddProductForm() {
       
       const imagUrls = await Promise.all(promisesArray)
 
+
       const product = {
           productId : productId,
           productName : productName,
@@ -113,7 +114,6 @@ export default function AddProductForm() {
             </label>
             <input
               type="file"
-              id="imageUrls"
               className="w-full px-4 py-3 border border-gray-300 rounded-xl text-gray-800 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
               placeholder="Enter Image URLs"
               onChange={(e) =>{

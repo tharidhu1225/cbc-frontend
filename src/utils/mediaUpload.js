@@ -13,12 +13,13 @@ export default function uploadMediaToSupabase(file){
     if(file == null){
         reject("File not added")
     }
-    let fileName = file.name;
+    let fileName = file.name
     const extension = fileName.split(".")[fileName.split(".").length-1];
 
     const timestamp = new Date().getTime();
 
     fileName = timestamp +file.name+ "." +extension;
+    
 
     supabase.storage.from("images").upload(fileName,file,{
         cacheControl : "3600",

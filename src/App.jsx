@@ -9,6 +9,7 @@ import { Toaster } from 'react-hot-toast'
 import FileUploadTest from '../pages/test'
 import { GoogleOAuthProvider } from '@react-oauth/google'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/admin/*" element={<AdminHomePage/>}/>
           <Route path="/signup" element={<SignUpPage/>}/>
           <Route path="/testing" element={<FileUploadTest/>}/>
+          
         </Routes>
         </GoogleOAuthProvider>
       </BrowserRouter>
