@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Link, Route, Routes, useNavigate } from "react-router-dom";
 import { BsGraphUp } from "react-icons/bs";
 import { FaBox, FaClipboardList, FaUserCircle } from "react-icons/fa";
 import AdminProductPage from "./admin/adminProductPage";
@@ -7,7 +7,10 @@ import EditProductForm from "./admin/editProductForm";
 import AdminOrdersPage from "./admin/adminOrderPage";
 
 
+
+
 export default function AdminHomePage() {
+    
     return (
         <div className="bg-blue-200 w-full h-full flex">
              
@@ -42,6 +45,7 @@ export default function AdminHomePage() {
                 <Route path="/customers" element={<h1>Customers</h1>}/>
                 <Route path="/*" element={<h1>404 not found</h1>}/>
                 </Routes>
+               
             </div>
   
         </div>
