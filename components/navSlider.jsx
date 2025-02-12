@@ -18,7 +18,6 @@ export default function NavSlider(props){
                <Link to="/products" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiOutlineAppstore className="mr-2" /> Products</Link>
                <Link to="/about" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiOutlineInfoCircle className="mr-2" /> About Us</Link>
                <Link to="/contact" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiOutlinePhone className="mr-2" /> Contact Us</Link>
-               <Link to="/cart" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiOutlineShoppingCart className="mr-2" /> Cart</Link>
                <Link to="/orders" className="flex flex-row items-center text-white hover:text-gray-300 text-2xl"><AiFillCodeSandboxSquare className="mr-2" />Add Order</Link>
                </div>
                </div>
