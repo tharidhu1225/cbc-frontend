@@ -1,9 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import NotFoundPage from "./productNotFound";
-import { addToCart } from "../../src/utils/cartFunction";
-import toast from "react-hot-toast";
+
 
 export default function ProductOverview(){
 
@@ -11,6 +10,7 @@ export default function ProductOverview(){
    const productId = params.id;
    const [product, setProduct] = useState(null)
    const [status, setStatus] = useState("loading")
+   const goTpOreder = useNavigate()
    
    useEffect(
      ()=>{
@@ -29,9 +29,8 @@ export default function ProductOverview(){
     }
     ,[])
 
-    function onAddtoCardClick(){
-        addToCart(product.productId,1)
-        toast.success(product.productId+"added to cart")
+    function onBuyClick(){
+       goTpOreder("/orders")
     }
 
     return(
@@ -69,7 +68,7 @@ export default function ProductOverview(){
                         <span className="line-through text-red-500">LKR.{product.price}</span>
                         }<span>{"LKR"+product.lastPrice}</span></p>
                         <p className="flex text-lg text-gray-600 line-clamp-3">{product.description}</p>
-                        <button onClick={onAddtoCardClick} className="bg-orange-500 text-white p-2 rounded-lg">Add to cart</button>
+                        <button onClick={onBuyClick} className="mt-6 px-6 md:px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-full text-white font-bold shadow-md transition-transform transform hover:scale-105 w-full md:w-auto">Order This</button>
                        </div>
 
                     </div>
