@@ -27,6 +27,7 @@ export default function uploadMediaToSupabase(file){
     }).then(()=>{
         const publicUrl = supabase.storage.from("images").getPublicUrl(fileName).data.publicUrl;
         resolve(publicUrl);
+        
     }).catch((err)=>{
         reject(err);
     });

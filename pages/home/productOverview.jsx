@@ -58,7 +58,7 @@ export default function ProductOverview(){
                         (product.price>product.lastPrice)&&
                         <span className="line-through text-red-500">LKR.{product.price}</span>
                         }<span>{"LKR"+product.lastPrice}</span></p>
-                        <img src={product[0]} className="w-full h-[300px] object-cover rounded-lg"/>
+                        <img src={product.Images[0]} className="w-full h-[300px] object-cover rounded-lg"/>
                        </div>
                        <div className="w-[65%] h-full p-4">
                         <h1 className="text-3xl font-bold text-gray-800 hidden lg:block">{product.productName}</h1>

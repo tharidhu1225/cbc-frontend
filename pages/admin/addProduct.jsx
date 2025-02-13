@@ -31,7 +31,7 @@ export default function AddProductForm() {
           productId : productId,
           productName : productName,
           altNames : altNames,
-          images : imagUrls,
+          Images : imagUrls,
           price : price,
           lastPrice : lastPrice,
           stock : stock,
