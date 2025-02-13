@@ -6,7 +6,8 @@ import toast, { Toaster } from "react-hot-toast";
 export default function CheckoutPage() {
   const navigate = useNavigate();
   const [items, setItems] = useState([]);
-  const [name, setName] = useState("");
+  const [myName, setmyName] = useState("");
+  const [customerName, setcustomerName] = useState("");
   const [email, setEmail] = useState("");
   const [address, setAddress] = useState("");
   const [phone, setPhone] = useState("");
@@ -29,7 +30,7 @@ export default function CheckoutPage() {
   };
 
   const handleOrder = async () => {
-    if (!name || !email || !address || !phone || items.length === 0) {
+    if (!myName ||!customerName|| !email || !address || !phone || items.length === 0) {
       toast.error("All fields are required!");
       return;
     }
@@ -37,7 +38,7 @@ export default function CheckoutPage() {
     setLoading(true);
     try {
       const response = await axios.post(import.meta.env.VITE_BACKEND_URL + "/api/orders", {
-        name, email, address, phone, orderItems: items, paymentMethod, orderStatus
+        myName, customerName,email, address, phone, orderItems: items, paymentMethod, orderStatus
       });
 
       if (response.status === 201) {
@@ -70,8 +71,13 @@ export default function CheckoutPage() {
       </div>
 
       <div className="mb-6">
-        <label className="block text-sm font-medium mb-1">Full Name</label>
-        <input type="text" className="border p-2 w-full" value={name} onChange={(e) => setName(e.target.value)} placeholder="Enter name" />
+        <label className="block text-sm font-medium mb-1">Enter Your Name</label>
+        <input type="text" className="border p-2 w-full" value={myName} onChange={(e) => setmyName(e.target.value)} placeholder="Enter Your Name" />
+      </div>
+
+      <div className="mb-6">
+        <label className="block text-sm font-medium mb-1">Enter Customer Name</label>
+        <input type="text" className="border p-2 w-full" value={customerName} onChange={(e) => setcustomerName(e.target.value)} placeholder="Enter Customer Name" />
       </div>
 
       <div className="mb-6">

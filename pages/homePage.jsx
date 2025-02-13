@@ -7,7 +7,7 @@ import About from "./home/about";
 import Home from "./home/home";
 import ContactUs from "./home/contact";
 import ShippingPage from "./home/shipping";
-import MyOrdersPage from "./home/viweOrder";
+
 
 export default function HomePage(){
     return(
@@ -23,7 +23,6 @@ export default function HomePage(){
                <Route path="/about/" element={<About/>}/>
                <Route path="/contact/" element={<ContactUs/>}/>
                <Route path="/orders" element={<ShippingPage/>}/>
-               <Route path="/vieworder" element={<MyOrdersPage/>}/>
             </Routes> 
             </div>
         </div>
