@@ -6,27 +6,7 @@ export default function AdminDashboard() {
   return (
     <div className="flex h-screen bg-gray-100">
       {/* Sidebar */}
-      <div className="w-64 bg-blue-600 text-white flex flex-col p-5 space-y-6">
-        <h2 className="text-2xl font-bold text-center">Admin Panel</h2>
-        <nav className="flex flex-col space-y-4">
-          <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/admin/dashboard">
-            <BsGraphUp size={20} />
-            <span>Dashboard</span>
-          </Link>
-          <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/admin/products">
-            <BsBox size={20} />
-            <span>Products</span>
-          </Link>
-          <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/admin/orders">
-            <BsCartCheck size={20} />
-            <span>Orders</span>
-          </Link>
-          <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/admin/customers">
-            <BsPeople size={20} />
-            <span>Customers</span>
-          </Link>
-        </nav>
-      </div>
+      
 
       {/* Main Content */}
       <div className="flex-1 p-6">
