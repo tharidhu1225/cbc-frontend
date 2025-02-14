@@ -81,18 +81,18 @@ export default function CheckoutPage() {
       </div>
 
       <div className="mb-6">
-        <label className="block text-sm font-medium mb-1">Email</label>
-        <input type="email" className="border p-2 w-full" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter email" />
+        <label className="block text-sm font-medium mb-1">Enter Your Email</label>
+        <input type="email" className="border p-2 w-full" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" />
       </div>
 
       <div className="mb-6">
-        <label className="block text-sm font-medium mb-1">Address</label>
-        <input type="text" className="border p-2 w-full" value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Enter address" />
+        <label className="block text-sm font-medium mb-1">Customer Address</label>
+        <input type="text" className="border p-2 w-full" value={address} onChange={(e) => setAddress(e.target.value)} placeholder="Enter Customer address" />
       </div>
 
       <div className="mb-6">
-        <label className="block text-sm font-medium mb-1">Phone Number</label>
-        <input type="tel" className="border p-2 w-full" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Enter phone number" />
+        <label className="block text-sm font-medium mb-1">Customer Phone Number</label>
+        <input type="tel" className="border p-2 w-full" value={phone} onChange={(e) => setPhone(e.target.value)} placeholder="Enter Customer phone number" />
       </div>
 
       <div className="mb-6">
