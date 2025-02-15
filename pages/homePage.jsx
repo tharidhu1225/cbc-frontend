@@ -9,6 +9,7 @@ import ContactUs from "./home/contact";
 import ShippingPage from "./home/shipping";
 
 
+
 export default function HomePage(){
     return(
         <div className="h-screen w-full">
@@ -23,6 +24,7 @@ export default function HomePage(){
                <Route path="/about/" element={<About/>}/>
                <Route path="/contact/" element={<ContactUs/>}/>
                <Route path="/orders" element={<ShippingPage/>}/>
+               
             </Routes> 
             </div>
         </div>

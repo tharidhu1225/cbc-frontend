@@ -59,7 +59,7 @@ const OrdersTable = () => {
                   <td className="border p-2">
                     {order.orderItems.map((item, i) => (
                       <div key={i}>
-                        {item.productName} (x{item.quantity}) - ${item.price}
+                        {item.productName} (x{item.quantity}) - LKR.{item.price}
                       </div>
                     ))}
                   </td>
