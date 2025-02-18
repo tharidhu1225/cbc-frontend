@@ -18,7 +18,7 @@ export default function LoginPage() {
             if (res.data.user.type == "admin") {
               window.location.href = "/admin"
             }else{
-              window.location.href = "/"
+              window.location.href = "/home/home"
             }
           }
         }
@@ -45,7 +45,7 @@ export default function LoginPage() {
         if (res.data.user.type == "admin") {
           window.location.href = "/admin";
         } else {
-          window.location.href = "/";
+          window.location.href = "/home/home";
         }
       });
   }

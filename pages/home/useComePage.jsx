@@ -1,5 +1,9 @@
+import UserCome from "../../components/userComeheadder";
+
 export default function UserCommingPage(){
     return(
-        <dib>Hi Users</dib>
+        <div>
+            <UserCome/>
+        </div>
     )
 }
