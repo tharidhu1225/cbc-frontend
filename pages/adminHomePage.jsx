@@ -34,7 +34,7 @@ export default function AdminHomePage() {
                       </Link>
                       <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/admin/customers">
                         <BsPeople size={20} />
-                        <span>Customers</span>
+                        <span>Users</span>
                       </Link>
                     </nav>
                   </div>
