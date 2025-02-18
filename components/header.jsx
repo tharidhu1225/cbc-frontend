@@ -17,11 +17,11 @@ export default function Header(){
 
             <div className="h-full items-center w-[500px] justify-evenly hidden lg:flex space-x-10">
 
-            <Link to="/" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Home</Link>
-            <Link to="/products" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Products</Link>
-            <Link to="/about" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">About Us</Link>
-            <Link to="/contact" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Contact Us</Link>
-            <Link to="/orders" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Add Order</Link>
+            <Link to="/home/home" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Home</Link>
+            <Link to="/home/products" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Products</Link>
+            <Link to="/home/about" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">About Us</Link>
+            <Link to="/home/contact" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Contact Us</Link>
+            <Link to="/home/orders" className="text-[#052d6f] font-bold text-xl hover:border-b border-b-[#052d6f]">Add Order</Link>
             
 
             </div>
