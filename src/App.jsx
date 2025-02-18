@@ -8,7 +8,7 @@ import SignUpPage from '../pages/signUpPage'
 import { Toaster } from 'react-hot-toast'
 import FileUploadTest from '../pages/test'
 import { GoogleOAuthProvider } from '@react-oauth/google'
-import UserCommingPage from '../pages/home/useComePage'
+import UserCome from '../components/userComeheadder'
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
        <Toaster/>
        <GoogleOAuthProvider clientId='658159350627-859s1qt5iqutsuscf7km345rseai09hp.apps.googleusercontent.com'>
         <Routes path="/*">
-          <Route path="/" element={<UserCommingPage/>}/>
+          <Route path="/" element={<UserCome/>}/>
           <Route path='/home/*' element={<HomePage/>}/>
           <Route path="/login" element={<LoginPage/>}/>
           <Route path="/admin/*" element={<AdminHomePage/>}/>
