@@ -24,6 +24,7 @@ function App() {
           <Route path="/admin/*" element={<AdminHomePage/>}/>
           <Route path="/signup" element={<SignUpPage/>}/>
           <Route path="/testing" element={<FileUploadTest/>}/>
+
           
         </Routes>
         </GoogleOAuthProvider>
@@ -31,5 +32,7 @@ function App() {
     </>
   )
 }
+
+//add new feature login
 
 export default App
