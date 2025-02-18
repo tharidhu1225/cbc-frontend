@@ -33,6 +33,4 @@ function App() {
   )
 }
 
-//add new feature login
-
 export default App

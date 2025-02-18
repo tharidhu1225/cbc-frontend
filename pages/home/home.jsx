@@ -15,10 +15,10 @@ export default function Home() {
             <p className="text-lg md:text-xl mt-4 text-gray-200">Discover exclusive deals on high-end products</p>
             <button onClick={add} className="mt-6 px-6 md:px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 rounded-full text-white font-bold shadow-md transition-transform transform hover:scale-105 w-full md:w-auto">
               Add Your Orders
-            </button>
+            </button> 
           </div>
         </div>
-        </div>
+        </div>//edit
     );
   }
   
