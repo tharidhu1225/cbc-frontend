@@ -43,7 +43,7 @@ export default function CheckoutPage() {
 
       if (response.status === 201) {
         toast.success("Order placed successfully!");
-        setTimeout(() => navigate("/"), 2000);
+        setTimeout(() => navigate("/home/home"), 2000);
       }
     } catch (error) {
       toast.error("Failed to place order.");
