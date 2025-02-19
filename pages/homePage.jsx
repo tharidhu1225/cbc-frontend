@@ -17,13 +17,12 @@ export default function HomePage(){
             <div className="w-full h-[calc(100vh-100px)] bg-[#f7f3fad8]">
 
             <Routes path="/*">
-               <Route path="/home" element={<Home/>}/>
+               <Route path="/home/" element={<Home/>}/>
                <Route path="/products" element={<ProductPage/>}/>
-               <Route path="/login" element={<LoginPage/>}/>
                <Route path="/productInfo/:id" element={<ProductOverview/>}/>
                <Route path="/about/" element={<About/>}/>
                <Route path="/contact/" element={<ContactUs/>}/>
-               <Route path="/orders" element={<ShippingPage/>}/>
+               <Route path="/orders/" element={<ShippingPage/>}/>
                
             </Routes> 
             </div>
