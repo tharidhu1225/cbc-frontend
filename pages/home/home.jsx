@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 export default function Home() {
   const addOrder = useNavigate()
   function add(){
-    addOrder("/orders")
+    addOrder("/home/orders")
   }
     return (
       <div className="min-h-screen bg-gray-50 font-sans">

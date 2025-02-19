@@ -30,7 +30,7 @@ export default function ProductOverview(){
     ,[])
 
     function onBuyClick(){
-       goTpOreder("/orders",)
+       goTpOreder("/home/orders",)
     }
 
     return(
