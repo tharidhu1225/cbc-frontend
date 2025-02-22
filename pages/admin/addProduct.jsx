@@ -45,7 +45,7 @@ export default function AddProductForm() {
               Authorization : "Beare"+token
             }
           })
-          navigate("/admin/products")
+          navigate("/TN/products")
           toast.success("Product added successfully")
         }catch(err){
           toast.error("Failed to add Product")
