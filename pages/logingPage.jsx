@@ -16,7 +16,7 @@ export default function LoginPage() {
           }else{
             localStorage.setItem("token",res.data.token)
             if (res.data.user.type == "admin") {
-              window.location.href = "/admin"
+              window.location.href = "/TN"
             }else{
               window.location.href = "/home/home"
             }
