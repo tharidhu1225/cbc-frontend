@@ -12,7 +12,7 @@ export default function EditProductForm() {
   const altNames = product.altNames.join(",") //add to alt names But it is a Array
 
   if(!product){
-    navigate("/admin/products")
+    navigate("/TN/products")
   }
   const [productId, setProductId] = useState(product.productId);
   const [productName, setProductName] = useState(product.productName);
@@ -57,7 +57,7 @@ export default function EditProductForm() {
               Authorization : "Beare"+token
             }
           })
-          navigate("/admin/products")
+          navigate("/TN/products")
           toast.success("Product Updated successfully")
         }catch(err){
           toast.error("Failed to Update Product")

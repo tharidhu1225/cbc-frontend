@@ -25,7 +25,7 @@ export default function AdminProductPage() {
   return (
     <div className="bg-gray-50 p-8 min-h-screen relative">
 
-        <Link to={"/admin/products/addProduct"} className="absolute right-[35px] bottom-0 text-[25px] border-[#3b82f6] border-[2px]
+        <Link to={"/TN/products/addProduct"} className="absolute right-[35px] bottom-0 text-[25px] border-[#3b82f6] border-[2px]
          text-[#3b82f6] p-2 rounded-xl hover:rounded-full "><FaPlus/></Link>
      
       <h1 className="text-4xl font-semibold text-center text-gray-800 mb-8">TN International(PVT)LTD...</h1>
@@ -81,7 +81,7 @@ export default function AdminProductPage() {
                     title="Edit"
                     
                     onClick={()=>{
-                      navigate("/admin/products/editProduct" , {state :{product : product}});
+                      navigate("/TN/products/editProduct" , {state :{product : product}});
                     }}
                     >  
 

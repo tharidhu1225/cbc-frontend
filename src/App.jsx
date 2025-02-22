@@ -23,7 +23,7 @@ function App() {
           <Route path="/" element={<UserCome/>}/>
           <Route path='/home/*' element={<HomePage/>}/>
           <Route path="/login" element={<LoginPage/>}/>
-          <Route path="/admin/*" element={<AdminHomePage/>}/>
+          <Route path="/TN/*" element={<AdminHomePage/>}/>
           <Route path="/signup" element={<SignUpPage/>}/>
           
 

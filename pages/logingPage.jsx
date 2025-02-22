@@ -43,7 +43,7 @@ export default function LoginPage() {
         toast.success("Login success");
         localStorage.setItem("token", res.data.token); //13 vdo
         if (res.data.user.type == "admin") {
-          window.location.href = "/admin";
+          window.location.href = "/TN";
         } else {
           window.location.href = "/home/home";
         }

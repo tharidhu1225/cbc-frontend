@@ -59,7 +59,7 @@ export default function ProductPage(){
         }
 
     return(
-        <div className="w-full h-full relative pt-5">
+        <div className="w-full h-full relative">
             <div className="absolute w-full flex justify-center">
             <input
              type="text"
@@ -69,7 +69,7 @@ export default function ProductPage(){
              value={query}
             />
             </div>
-        {loadingStatus=="loaded"&&<div className="w-full h-full overflow-y-scroll flex flex-wrap justify-center pt-10 relative">
+        {loadingStatus=="loaded"&&<div className="w-full h-full overflow-y-scroll flex flex-wrap justify-center pt-2 relative">
             
             {
                 products.map(

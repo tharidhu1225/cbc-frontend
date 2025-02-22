@@ -20,19 +20,19 @@ export default function AdminHomePage() {
             <div className="w-50 bg-blue-600 text-white flex flex-col p-5 space-y-6">
                     <h2 className="text-2xl font-bold text-center">Admin Panel</h2>
                     <nav className="flex flex-col space-y-4">
-                      <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/admin/dashboard">
+                      <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/TN/dashboard">
                         <BsGraphUp size={20} />
                         <span>Dashboard</span>
                       </Link>
-                      <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/admin/products">
+                      <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/TN/products">
                         <BsBox size={20} />
                         <span>Products</span>
                       </Link>
-                      <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/admin/orders">
+                      <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/TN/orders">
                         <BsCartCheck size={20} />
                         <span>Orders</span>
                       </Link>
-                      <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/admin/customers">
+                      <Link className="flex items-center space-x-3 hover:bg-blue-500 px-4 py-2 rounded transition" to="/TN/customers">
                         <BsPeople size={20} />
                         <span>Users</span>
                       </Link>
